@@ -20,3 +20,27 @@ def generate_thrust_profile():
 
     return pd.DataFrame({"time_s": time, "thrust_N": thrust})
 
+def save_thrust_csv(folder="inputs"): # Will generate input CSV values, can be edited later to determine your desired outcomes/can save a test CSV file for reference
+    os.makedirs(folder, exist_ok=True)
+    filepath = os.path.join(folder, "thrust.csv")
+    df = generate_thrust_profile()
+    df.to_csv(filepath, index=False)
+    print(f"[INFO] Generated thrust profile: {filepath}")
+    return filepath
+
+def run_trajectory_simulation():
+    csv_path = save_thrust_csv()
+    df = pd.read_csv(csv_path)
+
+    plt.figure()
+    plt.plot(df["time_s"], df["thrust_N"], label="Thrust (N)")
+    plt.xlabel("Time (s)")
+    plt.ylabel("Thrust (N)")
+    plt.title("Missile Thrust Profile")
+    plt.legend()
+    plt.savefig("outputs/thrust_profile.png")
+    plt.close()
+    print("[INFO] Saved thrust profile plot: outputs/thrust_profile.png")
+
+def run():
+    run_trajectory_simulation()
