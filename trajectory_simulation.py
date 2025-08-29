@@ -25,7 +25,7 @@ def save_thrust_csv(folder="inputs"): # Will generate input CSV values, can be e
     filepath = os.path.join(folder, "thrust.csv")
     df = generate_thrust_profile()
     df.to_csv(filepath, index=False)
-    print(f"[INFO] Generated thrust profile: {filepath}")
+    print(f"Generated thrust profile: {filepath}")
     return filepath
 
 def run_trajectory_simulation():
