@@ -1,5 +1,5 @@
 # mil-simulation-test
-NOTE: THIS IS JUST A TEST/SAMPLE USING PLACEHOLDER VALUES, AND THIS PROJECT IS ONLY MEANT FOR REFERENCE/EDUCATIONAL PURPOSES.
+NOTE: THIS IS JUST A TEST/SAMPLE PROJECT, AND THIS PROJECT IS ONLY MEANT FOR REFERENCE/EDUCATIONAL PURPOSES. ALL VALUES NOT GENERATED ARE EITHER PLACEHOLDERS OR CONFIRMED VALUES.
 
 ---
 
@@ -41,6 +41,12 @@ Plots (PNGs) → stored in plots/\
 Tables (CSVs) → stored in tables/\
 Final consolidated report → stored in tables/consolidated_summary.csv\
 
+## Notes
+
+All mathematical models (missile kinematics, radar detection range, NEZ envelopes) are parameterized based on missile and/or other asset(s) statistics of both sides.\
+For custom configs, modify the CSVs in inputs/.
+
+### That is it. 
 
    
 
