@@ -32,7 +32,7 @@ mil-simulation-test/\
 
 3. [OPTIONAL] IF ON WINDOWS: execute run_all.bat file\
 (or)\
-[OPTIONAL] IF ON LINUX/MACOS: Make the shell file executable via ```chmod a+x run_all.sh``` , and then run it via ```./run_all.sh```\
+[OPTIONAL] IF ON LINUX/MACOS: Make the shell file executable via ```chmod a+x run_all.sh``` , and then run it via ```./run_all.sh```
 
 4. [RECOMMENDED] In terminal, run ```python missile_master.py```
 
