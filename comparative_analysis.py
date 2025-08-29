@@ -10,3 +10,11 @@ def generate_comparison_data():
         "speed_mach": [4.0, 5.0, 4.0, 6.0]
     }
     return pd.DataFrame(data)
+
+def save_comparison_csv(folder="inputs"):
+    os.makedirs(folder, exist_ok=True)
+    filepath = os.path.join(folder, "comparison_data.csv")
+    df = generate_comparison_data()
+    df.to_csv(filepath, index=False)
+    print(f"[INFO] Generated comparison data: {filepath}")
+    return filepath
