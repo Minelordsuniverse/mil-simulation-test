@@ -5,7 +5,7 @@ __NOTE: THIS IS JUST A TEST/SAMPLE PROJECT, AND THIS PROJECT IS ONLY MEANT FOR R
 # Missile Simulation & Analysis Project
 
 This project simulates missile trajectories, **No Escape Zone (NEZ)** sensitivity, and **radar detection/coverage analysis** for both sides (attacker and defender), taking into account missile statistics.
-It also generates a consolidated report with plots and tables generated via matplotlib + numpy. 
+It also generates a consolidated report with plots and tables generated via matplotlib + pandas + numpy. 
 
 ## Project Structure
 
@@ -27,12 +27,13 @@ mil-simulation-test/\
 
 ```git clone https://github.com/Minelordsuniverse/mil-simulation-test.git```\
 ```cd mil-simulation-test```\
+2. In terminal, run ```pip install pandas```
 
-2. [OPTIONAL] IF ON WINDOWS: execute run_all.bat file\
+3. [OPTIONAL] IF ON WINDOWS: execute run_all.bat file\
 (or)\
-IF ON LINUX/MACOS: Make the shell file executable via ```chmod a+x run_all.sh``` , and then run it via ```./run_all.sh```\
+[OPTIONAL] IF ON LINUX/MACOS: Make the shell file executable via ```chmod a+x run_all.sh``` , and then run it via ```./run_all.sh```\
 
-3. [RECOMMENDED] In terminal, run ```python missile_master.py```
+4. [RECOMMENDED] In terminal, run ```python missile_master.py```
 
 ## Outputs
 
