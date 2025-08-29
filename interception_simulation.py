@@ -16,3 +16,30 @@ def generate_interception_cases():
 
     return pd.DataFrame(rows)
 
+def save_interception_csv(folder="inputs"):
+    os.makedirs(folder, exist_ok=True)
+    filepath = os.path.join(folder, "interception_cases.csv")
+    df = generate_interception_cases()
+    df.to_csv(filepath, index=False)
+    print(f"[INFO] Generated interception cases: {filepath}")
+    return filepath
+
+def run_interception():
+    csv_path = save_interception_csv()
+    df = pd.read_csv(csv_path)
+
+    plt.figure()
+    for v_i in df["interceptor_speed_mach"].unique():
+        subset = df[df["interceptor_speed_mach"] == v_i]
+        plt.plot(subset["target_speed_mach"], subset["p_kill"], marker="o", label=f"Interceptor Mach {v_i}")
+
+    plt.xlabel("Target Speed (Mach)")
+    plt.ylabel("Probability of Kill")
+    plt.title("Interception Effectiveness")
+    plt.legend()
+    plt.savefig("outputs/interception_sim.png")
+    plt.close()
+    print("Saved interception plot: outputs/interception_sim.png")
+
+def run():
+    run_interception()
