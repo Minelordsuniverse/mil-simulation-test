@@ -29,11 +29,18 @@ mil-simulation-test/\
 ```git clone https://github.com/Minelordsuniverse/mil-simulation-test.git```\
 ```cd mil-simulation-test```\
 
-2. IF ON WINDOWS: execute run_all.bat file\
+2. [OPTIONAL] IF ON WINDOWS: execute run_all.bat file\
 (or)\
 IF ON LINUX/MACOS: Make the shell file executable via ```chmod a+x run_all.sh``` , and then run it via ```./run_all.sh```\
 
-3. In terminal, run ```python missile_master.py```
+3. [RECOMMENDED] In terminal, run ```python missile_master.py```
+
+## Outputs
+
+Plots (PNGs) → stored in plots/\
+Tables (CSVs) → stored in tables/\
+Final consolidated report → stored in tables/consolidated_summary.csv\
+
 
    
 
