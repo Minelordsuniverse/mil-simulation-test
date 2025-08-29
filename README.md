@@ -44,6 +44,8 @@ Final consolidated report → stored in tables/consolidated_summary.csv\
 
 ## Notes
 
+Folders (inputs, outputs, plots) will automatically be created whilst generating plots & tables, if they do not exist already.
+Values in the input CSVs can always be edited/re-saved to determine different outcomes (i.e you can make a test CSV file too for reference)
 All mathematical models (missile kinematics, radar detection range, NEZ envelopes) are parameterized based on missile and/or other asset(s) statistics of both sides.\
 For custom configs, modify the CSVs in inputs/.
 
