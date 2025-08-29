@@ -10,7 +10,7 @@ It also generates a consolidated report with plots and tables.
 
 ## Project Structure
 
-mil-simulation-test/
+mil-simulation-test/\
 ├── inputs/ # CSV inputs (comparison data, interception, radar, thrust values)\
 ├── outputs/ # Auto-generated plots (range comparisons, speed comparisons, thrust profiles, interception sims)\
 ├── plots/ # Auto-generated plots for nez+radar+trajectory\
@@ -21,3 +21,20 @@ mil-simulation-test/
 ├── missile_master.py # Master CLI script (main entry point)\
 ├── run_all.sh # Unix shell runner\
 └── run_all.bat # Windows batch runner\
+
+## How to run
+
+1. Clone the project and enter the folder:
+
+```git clone https://github.com/Minelordsuniverse/mil-simulation-test.git```\
+```cd mil-simulation-test```\
+
+2. IF ON WINDOWS: execute run_all.bat file\
+(or)\
+IF ON LINUX/MACOS: Make the shell file executable via ```chmod a+x run_all.sh``` , and then run it via ```./run_all.sh```\
+
+3. In terminal, run ```python missile_master.py```
+
+   
+
+   
