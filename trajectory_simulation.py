@@ -40,7 +40,7 @@ def run_trajectory_simulation():
     plt.legend()
     plt.savefig("outputs/thrust_profile.png")
     plt.close()
-    print("[INFO] Saved thrust profile plot: outputs/thrust_profile.png")
+    print("Saved thrust profile plot(s) in outputs/thrust_profile.png")
 
 def run():
     run_trajectory_simulation()
