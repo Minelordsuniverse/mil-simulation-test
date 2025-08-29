@@ -27,6 +27,7 @@ mil-simulation-test/\
 
 ```git clone https://github.com/Minelordsuniverse/mil-simulation-test.git```\
 ```cd mil-simulation-test```\
+
 2. In terminal, run ```pip install pandas```
 
 3. [OPTIONAL] IF ON WINDOWS: execute run_all.bat file\
