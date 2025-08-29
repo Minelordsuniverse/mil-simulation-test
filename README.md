@@ -25,8 +25,8 @@ mil-simulation-test/\
 
 1. Clone the project and enter the folder:
 
-```git clone https://github.com/Minelordsuniverse/mil-simulation-test.git```\
-```cd mil-simulation-test```\
+```git clone https://github.com/Minelordsuniverse/simple-mil-simulation-test.git```\
+```cd simple-mil-simulation-test```\
 
 2. In terminal, run ```pip install pandas```
 
