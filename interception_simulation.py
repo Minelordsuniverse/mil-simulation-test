@@ -21,7 +21,7 @@ def save_interception_csv(folder="inputs"):
     filepath = os.path.join(folder, "interception_cases.csv")
     df = generate_interception_cases()
     df.to_csv(filepath, index=False)
-    print(f"[INFO] Generated interception cases: {filepath}")
+    print(f"Generated interception cases: {filepath}")
     return filepath
 
 def run_interception():
